@@ -12,7 +12,7 @@ RUN apt-get install -y npm
 # Cache package.json and node_modules
 ADD ./example/package.json /tmp/package.json
 RUN cd /tmp && npm install
-RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
+RUN mkdir -p /opt/app
 
 ##
 # App Code
@@ -20,7 +20,9 @@ RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
 
 # Build the website
 WORKDIR /opt/app
-ADD ./example /opt/app
+ADD . /opt/app
+WORKDIR /opt/app/example
+RUN cp -a /tmp/node_modules /opt/app/example
 RUN npm run build
 
 # Move built website to nginx html folder
@@ -29,7 +31,7 @@ RUN cp -r build /var/www/html
 
 # Replace nginx server config
 RUN rm -v /etc/nginx/sites-enabled/default
-ADD nginx/default /etc/nginx/sites-enabled/default
+ADD example/nginx/default /etc/nginx/sites-enabled/default
 
 # Don't run as daemon, keeps docker container alive
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
