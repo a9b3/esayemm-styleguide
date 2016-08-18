@@ -10,6 +10,6 @@
   "author": "Sam Lau",
   "license": "ISC",
   "devDependencies": {
-    "kontinuum-deploy": "^1.0.0"
+    "kontinuum-deploy": "^1.1.0"
   }
 }
