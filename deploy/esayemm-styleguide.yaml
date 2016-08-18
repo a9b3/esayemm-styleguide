@@ -35,6 +35,6 @@ spec:
     spec:
       containers:
       - name: esayemm-styleguide
-        image: esayemm/esayemm-styleguide:74e7d77
+        image: esayemm/esayemm-styleguide:c48f73d
         ports:
         - containerPort: 80

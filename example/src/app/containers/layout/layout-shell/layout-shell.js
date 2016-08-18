@@ -9,7 +9,22 @@ import CSSModules from 'react-css-modules'
 export default class LayoutShell extends Component {
   render() {
     return <div styleName='layout-shell'>
-      Hello World!
+      <div styleName='sidebar'>
+        <div styleName='inner'>
+          Sidebar
+          <div styleName='long-item'>
+            Long-item
+          </div>
+        </div>
+      </div>
+      <div styleName='content'>
+        <div styleName='inner'>
+          Sidebar
+          <div styleName='long-item'>
+            Long-item
+          </div>
+        </div>
+      </div>
     </div>
   }
 }
