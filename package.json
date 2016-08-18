@@ -4,8 +4,12 @@
   "description": "Generic styles",
   "scripts": {
     "version": "git add .",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "deploy": "./node_modules/kontinuum-deploy/bin/kontinuum_deploy --input ./deploy/esayemm-styleguide.yaml.tpl --output ./deploy/esayemm-styleguide.yaml --service esayemm-styleguide"
   },
   "author": "Sam Lau",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "kontinuum-deploy": "^1.0.0"
+  }
 }
