@@ -1,0 +1,21 @@
+.color-swatch {
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  width: 200px;
+  height: 40px;
+}
+
+.key {
+  padding: 1em;
+  font-size: 12px;
+  min-width: 50px;
+}
+
+.hex {
+  padding: 1em;
+  font-size: 12px;
+  min-width: 80px;
+}

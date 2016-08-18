@@ -10,7 +10,7 @@ RUN apt-get install -y nodejs-legacy
 RUN apt-get install -y npm
 
 # Cache package.json and node_modules
-ADD package.json /tmp/package.json
+ADD ./example/package.json /tmp/package.json
 RUN cd /tmp && npm install
 RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
 
@@ -20,7 +20,7 @@ RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
 
 # Build the website
 WORKDIR /opt/app
-ADD . /opt/app
+ADD ./example /opt/app
 RUN npm run build
 
 # Move built website to nginx html folder

@@ -1,0 +1,20 @@
+@import '~shared.scss';
+
+.colors {
+  composes: flex-row;
+  flex-wrap: wrap;
+}
+
+.color-group {
+  min-width: 400px;
+  flex-grow: 1;
+}
+
+.title {
+  composes: h6;
+  padding: 2rem 0;
+}
+
+.swatches {
+  composes: flex-col;
+}

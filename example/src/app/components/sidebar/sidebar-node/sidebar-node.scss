@@ -1,0 +1,19 @@
+.sidebar-node {
+  a {
+    color: inherit;
+  }
+
+  .sidebar-node {
+    font-weight: 300;
+
+    .title {
+      padding-left: 2.5rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  padding: 1rem 2rem;
+}

@@ -1,0 +1,59 @@
+.type {
+
+}
+
+.section {
+  margin: 4rem 0;
+}
+.section:first-child {
+  margin-top: 0;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.divider {
+  height: 50px;
+  width: 1px;
+  border: 1px solid rgba(black, .1);
+  margin: 0 5rem;
+}
+
+.capital {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.weights {
+
+}
+
+.headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+
+  >* {
+    flex: 1;
+  }
+}
+
+.regular {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .info {
+    text-align: center;
+    padding: 4rem;
+  }
+}

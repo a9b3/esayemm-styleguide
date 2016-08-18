@@ -1,0 +1,16 @@
+@import '~shared.scss';
+
+.shell {
+  composes: flex-row;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+}
