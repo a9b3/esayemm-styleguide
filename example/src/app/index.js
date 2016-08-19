@@ -1,7 +1,7 @@
 // app entry point
 import '!style-loader!css-loader!font-awesome/css/font-awesome.css'
 import '!style-loader!css-loader!highlight.js/styles/monokai_sublime.css'
-import 'index.scss'
+import 'global.scss'
 
 import React from 'react'
 import { render } from 'react-dom'
@@ -35,8 +35,8 @@ render(
 if (module.hot) {
   let HotRoot = require('./root.js').default
 
-  module.hot.accept('index.scss', () => {
-    require('index.scss')
+  module.hot.accept('global.scss', () => {
+    require('global.scss')
   })
   module.hot.accept('./root.js', () => {
     render(
