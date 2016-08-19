@@ -24,11 +24,21 @@ export default class SidebarNode extends Component {
     } = this.props
 
     return <div className={`${className} ${styles['sidebar-node']}`}>
-      <Link to={node.link} activeClassName={`${styles.active}`}>
-        <div className={`${styles.title}`}>
-          {node.displayName}
-        </div>
-      </Link>
+      {
+        node.link.indexOf('#') !== -1
+          ?
+            <a href={node.link}>
+              <div className={`${styles.title}`}>
+                {node.displayName}
+              </div>
+            </a>
+          :
+            <Link to={node.link} activeClassName={`${styles.active}`}>
+              <div className={`${styles.title}`}>
+                {node.displayName}
+              </div>
+            </Link>
+      }
 
       <div className={`${styles.children}`}>
         {node.children && node.children.map((node, i) => <SidebarNode node={node}

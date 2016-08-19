@@ -1,9 +1,9 @@
 // font-face has to be declared outside of :global
 // https://github.com/css-modules/css-modules/issues/95
-/* @font-face { */
-/*   font-family: 'Proggy'; */
-/*   src: url(../example/src/styles/globals/assets/fonts/ProggyClean.ttf); */
-/* } */
+@font-face {
+  font-family: 'Proggy';
+  src: url(assets/fonts/ProggyClean.ttf);
+}
 
 :global {
   body {

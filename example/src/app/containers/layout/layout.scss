@@ -1,3 +1,18 @@
+@import '~shared.scss';
+
 .layout {
 
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.row {
+  composes: flex-row;
+
+  .item {
+    flex: 1;
+    padding: 1rem;
+  }
 }

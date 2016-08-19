@@ -35,8 +35,7 @@ export default class Sidebar extends Component {
       </div>
       <div styleName='footer'>
         <div styleName='footer-inner'>
-          <a href="#"><i className='fa fa-github'></i></a>
-          <a href="#"><i className='fa fa-linkedin'></i></a>
+          <a href='http://github.com/esayemm'><i className='fa fa-github'></i></a>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ class NavNodes {
         createNavNode('Colors', '/general#colors', null, 'colors'),
         createNavNode('Type', '/general#type', null, 'type'),
       ]),
-      createNavNode('Layout', 'layout'),
+      // createNavNode('Layout', 'layout'),
     ]
   }
 }

@@ -1,6 +1,6 @@
 // app entry point
 import '!style-loader!css-loader!font-awesome/css/font-awesome.css'
-import '!style-loader!css-loader!highlight.js/styles/github.css'
+import '!style-loader!css-loader!highlight.js/styles/monokai_sublime.css'
 import 'index.scss'
 
 import React from 'react'

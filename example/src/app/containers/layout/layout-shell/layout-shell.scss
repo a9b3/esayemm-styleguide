@@ -2,7 +2,7 @@
 
 .layout-shell {
   background: rgba(black, .1);
-  border: 1px solid black;
+  border: .5px solid black;
   height: 500px;
 
   composes: flex-row;
@@ -11,24 +11,24 @@
 .long-item {
   height: 1000px;
   background: rgba(red, .1);
-  border: 1px solid black;
+  border: .5px solid black;
 }
 
 .sidebar {
   background: rgba(black, .1);
-  border: 1px solid black;
+  border: .5px solid black;
   flex: 1;
 }
 
 .content {
   flex: 4;
   background: rgba(black, .1);
-  border: 1px solid black;
+  border: .5px solid black;
 }
 
 .inner {
   background: rgba(blue, .1);
-  border: 1px solid black;
+  border: .5px solid black;
   width: 100%;
   height: 100%;
   overflow: auto;
