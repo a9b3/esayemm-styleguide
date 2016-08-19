@@ -1,6 +1,6 @@
 {
   "name": "esayemm-styles",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generic styles",
   "scripts": {
     "version": "git add .",
