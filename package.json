@@ -12,5 +12,8 @@
   "devDependencies": {
     "kontinuum-deploy": "^1.1.2"
   },
-  "main": "./index.scss"
+  "main": "./index.scss",
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  }
 }
